@@ -5,8 +5,13 @@ python3
 ## 运行
 
 ```bash
+cp app.config.example app.config
+
 pipenv install
- 
+```
+配置 app.config.example 
+
+```bash
 pipenv run python main.py
 ```
 
