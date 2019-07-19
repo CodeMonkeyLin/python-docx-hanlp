@@ -1,0 +1,7 @@
+.vscode/
+qr_codes/
+.DS_Store
+*.xls
+*.log
+*.config
+!.gitkeep

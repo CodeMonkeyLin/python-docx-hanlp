@@ -1,0 +1,22 @@
+[[source]]
+url = "https://mirrors.aliyun.com/pypi/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+python-docx = "*"
+jieba = "*"
+pyhanlp = "*"
+baidu-aip = "*"
+xlrd = "*"
+xlwt = "*"
+xlutils = "*"
+ratelimiter = "*"
+configparser = "*"
+
+[dev-packages]
+pylint = "*"
+"autopep8" = "*"
+
+[requires]
+python_version = "3.7"
