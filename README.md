@@ -9,7 +9,7 @@ cp app.config.example app.config
 
 pipenv install
 ```
-配置 app.config.example 
+配置 app.config
 
 ```bash
 pipenv run python main.py
@@ -29,7 +29,11 @@ pipenv run python main.py
 - 本地库，同步调用，识别速度快
 - 识别精度有限
 
+https://github.com/hankcs/HanLP
+
 ## 百度词法分析
 - 识别准确度更高
-- 有qps限制
+- 有QPS限制 ( QPS（query per second）指每秒向服务发送的请求数量峰值，相当于每个API每秒可以允许请求的最大上限数量)
 > 解决限流问题可以使用 ratelimiter
+
+https://ai.baidu.com/docs#/NLP-Python-SDK/top

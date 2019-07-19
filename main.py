@@ -3,6 +3,7 @@
 
 import os
 import re
+import time
 from aip import AipNlp
 from docx import Document
 from docx.document import Document as _Document
@@ -71,9 +72,21 @@ for index, block in enumerate(iter_block_items(document)):
 # res = client.lexer('马云')
 # print(res)
 
-# rate_limiter = RateLimiter(max_calls=2, period=0.5)
+# rate_limiter = RateLimiter(max_calls=3, period=1)
 
 # for i in range(100):
 #     with rate_limiter:
 #         res = client.lexer('马云')
 #         print(res)
+
+# def limited(until):
+#     duration = int(round(until - time.time()))
+#     print('Rate limited, sleeping for {:d} seconds'.format(duration))
+
+
+# rate_limiter = RateLimiter(max_calls=2, period=1, callback=limited)
+
+
+# for i in range(100):
+#     with rate_limiter:
+#         print('Iteration', i)
